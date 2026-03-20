@@ -1,0 +1,60 @@
+.modern-navbar {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    padding: 20px;
+}
+.brand-logo {
+    font-weight: 700;
+    font-size: 20px;
+    color: #1399c6 !important;
+    letter-spacing: 0.5px;
+    transition: 0.3s;
+
+}
+.brand-logo:hover {
+    transform: scale(1.05);
+    color: #0d7fa3 !important;
+}
+
+.nav-link-modern {
+    position: relative;
+    font-weight: 600;
+    color: #333 !important;
+    margin-left: 15px;
+    padding: 6px 12px !important;
+    transition: all 0.25s ease;
+    border-radius: 8px;
+}
+
+.nav-link-modern:hover {
+    transform: scale(1.05);
+    color: #1399c6 !important;
+    background: rgba(19, 153, 198, 0.08);
+}
+
+.nav-link-modern.active {
+    color: #1399c6 !important;
+    background: rgba(19, 153, 198, 0.12);
+
+}
+
+.nav-link-modern::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: -3px;
+    left: 50%;
+    background: #1399c6;
+    transition: 0.3s;
+    transform: translateX(-50%);
+}
+
+.nav-link-modern:hover::after {
+    width: 60%;
+}
+
+.nav-link-modern.active::after {
+    width: 70%;
+}
